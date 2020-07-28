@@ -12,7 +12,6 @@ public class Main {
 
         Path sourceDirectory = Paths.get(args[0]);
         Path targetDirectory = Paths.get(args[1]);
-        Files.createDirectories(targetDirectory);
 
         Files.walk(sourceDirectory)
                 .filter(Files::isRegularFile)
