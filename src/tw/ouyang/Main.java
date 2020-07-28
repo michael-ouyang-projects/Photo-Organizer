@@ -18,22 +18,23 @@ public class Main {
                 .filter(Files::isRegularFile)
                 .forEach(photo -> {
                     try {
+                        // get creation year and month
                         BasicFileAttributes photoAttributes = Files.readAttributes(photo, BasicFileAttributes.class);
                         String year = photoAttributes.creationTime().toString().substring(0, 4);
                         String month = photoAttributes.creationTime().toString().substring(5, 7);
-                        Path yearDirectory = Paths.get(targetDirectory.toString(), year);
-                        Path monthDirectory = Paths.get(yearDirectory.toString(), month);
-                        Path targetFile = Paths.get(monthDirectory.toString(), photo.getFileName().toString());
-                        if (!(Files.exists(yearDirectory) && Files.isDirectory(yearDirectory))) {
-                            Files.createDirectories(yearDirectory);
-                        }
+                        
+                        // create directories if not exist
+                        Path monthDirectory = Paths.get(targetDirectory.toString(), year, month);
                         if (!(Files.exists(monthDirectory) && Files.isDirectory(monthDirectory))) {
                             Files.createDirectories(monthDirectory);
                         }
+                        
+                        // copy file
+                        Path targetFile = Paths.get(monthDirectory.toString(), photo.getFileName().toString());
                         Files.copy(photo, targetFile);
                     } catch (IOException e) {
-                        e.printStackTrace();
                         System.err.println("Something Went Wrong!");
+                        e.printStackTrace();
                     }
                 });
 
