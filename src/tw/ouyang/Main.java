@@ -22,7 +22,7 @@ public class Main {
                         String year = photoAttributes.creationTime().toString().substring(0, 4);
                         String month = photoAttributes.creationTime().toString().substring(5, 7);
                         
-                        // create directories if not exist
+                        // if monthDirectory exists and is a directory is false then create a new directory
                         Path monthDirectory = Paths.get(targetDirectory.toString(), year, month);
                         if (!(Files.exists(monthDirectory) && Files.isDirectory(monthDirectory))) {
                             Files.createDirectories(monthDirectory);
