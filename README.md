@@ -1,7 +1,8 @@
 # Photo-Organizer
 
 ## Motivation
-**I had a great number of disorder photos camimg from different source like mobile phone, old mobile phone, computer, social media, etc. Where i wanted to reach is putting them all together and do the classification base on there creation time.**
+**I had a great number of disorder photos camimg from different source like mobile phone, computer, social media, cloud storage, etc.** <br/>
+**What i wanted to do is putting them all together and do the classification base on there creation time.**
 
 ---
 
@@ -18,6 +19,6 @@
 ---
 
 **3. Check the result.**
-- You can now find that all the photos are classified by there creation time and laying in the desired directory.
+- You can now find that all the photos are classified by there creation time and were put in the desired directory.
   - Ex: a.png creating at August, 2020 will be put in directory => 'target directory/2020/08/a.png'. 
   - Ex: b.png creating at December, 2019 will be put in directory => 'target directory/2019/12/b.png'.
