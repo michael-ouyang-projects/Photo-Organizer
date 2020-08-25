@@ -1,8 +1,9 @@
 # Photo-Organizer
 
 ## Motivation
-**I had a great number of disorder photos camimg from different source like mobile phone, computer, social media, cloud storage, etc.** <br/>
-**What i wanted to do is putting them all together and do the classification base on there creation time.**
+> **I had a great number of disorder photos camimg from different source like phone, computer, social media, cloud storage, etc.**
+
+> **What i wanted to do is putting them all together and do the classification base on there creation time.**
 
 ---
 
