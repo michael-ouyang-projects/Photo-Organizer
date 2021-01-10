@@ -23,3 +23,8 @@
 - You can now find that all the photos are classified by there creation time and were put in the desired directory.
   - Ex: a.png creating at August, 2020 will be put in directory => 'target directory/2020/08/a.png'. 
   - Ex: b.png creating at December, 2019 will be put in directory => 'target directory/2019/12/b.png'.
+
+---
+
+### Demo picture is down below (my target directory is /data/Photo/byYear)
+![alt text](./picture.png "Demo Image")
